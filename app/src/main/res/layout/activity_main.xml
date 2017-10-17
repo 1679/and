@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hywoman.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="197dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img"
+        android:layout_marginLeft="74dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:text="학과"
+        android:textSize="25sp"
+        android:layout_marginLeft="57dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textView2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="263dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="학년"
+        android:textSize="25sp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginRight="102dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="102dp" />
+
+
+    <RadioGroup
+        android:layout_width="110dp"
+        android:layout_height="112dp"
+        android:layout_marginRight="47dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        android:id="@+id/radioGroup2"
+        android:layout_marginEnd="47dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="91dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="1학년"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="301dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="94dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="2학년"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="94dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:text="3학년"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="112dp"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toLeftOf="@+id/radioGroup2"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="정보경영과"
+            tools:layout_editor_absoluteY="19dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="세무회계과"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="행정실무과"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="one"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.906" />
+
+
+</android.support.constraint.ConstraintLayout>
